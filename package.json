@@ -8,14 +8,25 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "npm run server | npm run client"
   },
   "author": "Brad Traversy & Gregory Assasie",
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
+    "body-parser": "*",
     "concurrently": "^3.5.1",
+    "cookie-parser": "^1.4.1",
     "express": "^4.16.2",
-    "nodemon": "^1.14.7"
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "get-video-duration": "^0.3.0",
+    "get-video-info": "^1.0.0",
+    "mongodb": "*",
+    "mongoose": "^5.2.15",
+    "nodemon": "^1.14.7",
+    "react-router-dom": "^4.3.1",
+    "youtube-info": "^1.2.1"
   }
 }
